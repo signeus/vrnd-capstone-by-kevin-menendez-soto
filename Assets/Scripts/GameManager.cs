@@ -61,4 +61,15 @@ public class GameManager : MonoBehaviour {
             dissolveMaterial.SetFloat("Vector1_E9202937", objectDissolve);
         }
     }
+
+    public void turnOnLight()
+    {
+
+    }
+
+    public void turnOffLight()
+    {
+
+    }
+    
 }
