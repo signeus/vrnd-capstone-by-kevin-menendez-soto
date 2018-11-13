@@ -16,6 +16,8 @@
 	- Unity: **2018.1.0f2**
 	- Oculus Utilities: **3.4.1**
 	- Oculus Platform Tools: **1.20.0**
+	- Lightweight Render Pipeline **1.1.11**
+	- Shader Graph **1.1.9**
 	
 - Post-Mortem / Write-up
 	- [Document / Write-up PENDING](https://medium.com/@mamesoke/)
