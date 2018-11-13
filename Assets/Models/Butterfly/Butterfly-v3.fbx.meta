@@ -55,7 +55,12 @@ ModelImporter:
     13700004: LeftWingDown
     13700006: RightWing
     13700008: RightWingDown
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PierisRapae.001
+    second: {fileID: 2100000, guid: c74f931f19cb51145aa10463d2f02b61, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

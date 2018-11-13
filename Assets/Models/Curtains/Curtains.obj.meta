@@ -17,7 +17,17 @@ ModelImporter:
     3300002: pPlane5
     4300000: pPlane4
     4300002: pPlane5
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pPlane4Mat
+    second: {fileID: 2100000, guid: 7b11b8db94c368c43bfc21d1e0442358, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pPlane5Mat
+    second: {fileID: 2100000, guid: 3d73d7623c351ac4fb7739427389ad55, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -72,7 +82,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 4
+    normalCalculationMode: 2
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
