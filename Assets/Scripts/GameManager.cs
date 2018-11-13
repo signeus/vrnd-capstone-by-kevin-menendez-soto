@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+    // Timer
     [SerializeField]
     float timeLeftToStart = 10.0f;
 
-    bool timeOut = false;
 
-    float objectDissolve;
-
+    // Properties for Dissolve Mode
     [SerializeField]
     GameObject[] dissolveObjects;
     [SerializeField]
     Material dissolveMaterial;
+    bool timeOut = false;
+    float objectDissolve;
 
     // Use this for initialization
     void Start ()
     {
+        // Reinit the Material to -1.0f
         dissolveMaterial.SetFloat("Vector1_E9202937", -1.0f);
         objectDissolve = -1.0f;
     }
