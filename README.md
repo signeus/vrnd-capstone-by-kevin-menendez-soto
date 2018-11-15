@@ -1,28 +1,33 @@
 # Student Name: Kevin Menéndez Soto
 ## Project 7: Capstone
-#### Term 3 - Date: November 03, 2018
+#### Term 3 - Date: November 15, 2018 - Edit
 
 - Platform:
 	- Oculus Rift
 
 - Included files/folders:
-	- Unity Assets folder
-	- Library
-	- Project Settings folder
+	- Assets
+	- Packages
+	- Project Settings
+	- Build.zip
 	- README.md
 	- LICENSE
 
 - Versions:
-	- Unity: **2018.1.0f2**
-	- Oculus Utilities: **3.4.1**
-	- Oculus Platform Tools: **1.20.0**
+	- Unity: **v2018.1.9f2**
+	- Oculus Utilities: **1.28.0**
+	- OVRPlugin **v1.22.0**
 	- Lightweight Render Pipeline **1.1.11**
 	- Shader Graph **1.1.9**
 	
-- Post-Mortem / Write-up
-	- [Document / Write-up PENDING](https://medium.com/@mamesoke/)
+- Design Document
+	- 
 	
 - How to init:
+	- Please import the project in Unity
+	- Inside the project, open the Capstonefolder and inside Scenes
+	- Double click in "Level1"
+	- Put your HMD VR and click in the "Play" button of Unity, enjoy it.
 	
 - References:
 	- Models
