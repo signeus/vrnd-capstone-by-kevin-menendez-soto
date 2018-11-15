@@ -12911,7 +12911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf3243744c6a844890de4f35aba9052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 0
+  debugMode: 1
   debugGM: {fileID: 607980438}
   timeLeftToStart: 18
   dissolveObjects:
