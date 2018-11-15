@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -25,6 +25,13 @@ public class GameManager : MonoBehaviour {
     GameObject light;
     [SerializeField]
     GameObject enemy;
+
+    // GameOver properties
+    [SerializeField]
+    Image gameOverImage; // Game Over Sprite
+    float timeChangeScreen = 3.0f;
+    bool gameOver = false;
+
 
     // Use this for initialization
     void Start ()
@@ -56,6 +63,18 @@ public class GameManager : MonoBehaviour {
         if (timeOut)
         {
             DissolveAction();
+        }
+
+        if (gameOver)
+        {
+            timeChangeScreen -= Time.deltaTime;
+            Color tempColor = gameOverImage.color;
+            tempColor.a += 0.5f * Time.deltaTime; 
+            gameOverImage.color = tempColor;
+            if (timeChangeScreen <= 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
         }
     }
 
@@ -102,4 +121,9 @@ public class GameManager : MonoBehaviour {
         enemy.SetActive(false);
     }
 
+
+    public void GameOver()
+    {
+        gameOver = true;
+    }
 }

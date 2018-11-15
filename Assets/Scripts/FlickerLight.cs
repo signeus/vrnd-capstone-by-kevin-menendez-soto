@@ -6,10 +6,12 @@ public class FlickerLight : MonoBehaviour {
     Light testLight;
 
     // Flicking of the Bulb
+    public bool flicking = true;
     public float minWaitTime;
     public float maxWaitTime;
 
     // Intensity of the Bulb
+    public bool intensity = true;
     public float maxIntesity;
     public float minIntesity;
 
@@ -24,20 +26,29 @@ public class FlickerLight : MonoBehaviour {
     void Start()
     {
         testLight = GetComponent<Light>();
-        StartCoroutine(Flashing());
+        if (flicking)
+        {
+            StartCoroutine(Flashing());
+        }
         NextTime();
     }
 
     void OnEnable()
     {
         testLight = GetComponent<Light>();
-        StartCoroutine(Flashing());
+        if (flicking)
+        {
+            StartCoroutine(Flashing());
+        }
         NextTime();
     }
 
     private void OnDisable()
     {
-        StopCoroutine(Flashing());
+        if (flicking)
+        {
+            StopCoroutine(Flashing());
+        }
     }
 
     IEnumerator Flashing()
@@ -51,23 +62,27 @@ public class FlickerLight : MonoBehaviour {
 
     private void Update()
     {
-        currentTime += Time.deltaTime;
-        if(testLight.intensity >= minIntesity && testLight.intensity <= maxIntesity)
+        if (intensity)
         {
-            if (changeDirection)
+            currentTime += Time.deltaTime;
+            if (testLight.intensity >= minIntesity && testLight.intensity <= maxIntesity)
             {
-                testLight.intensity += currentTime * Time.deltaTime;
-            } else
-            {
-                testLight.intensity -= currentTime * Time.deltaTime;
+                if (changeDirection)
+                {
+                    testLight.intensity += currentTime * Time.deltaTime;
+                }
+                else
+                {
+                    testLight.intensity -= currentTime * Time.deltaTime;
+                }
             }
-        }
 
-        checkExtremeIntesity();
+            checkExtremeIntesity();
 
-        if (currentTime >= timeNext)
-        {
-            NextTime();
+            if (currentTime >= timeNext)
+            {
+                NextTime();
+            }
         }
     }
 

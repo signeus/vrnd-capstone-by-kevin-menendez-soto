@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyRaycastSelect : RaycastSelect {
-
+public class MyRaycastSelect : RaycastSelect
+{
     protected override void OnRaycastEnter(GameObject target)
     {
+        gm.GameOver();
         print("Activated trigger");
     }
     protected override void OnRaycastLeave(GameObject target)

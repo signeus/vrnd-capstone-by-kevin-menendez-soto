@@ -6,9 +6,16 @@ public class RaycastSelect : MonoBehaviour {
     public LayerMask layerMask;
 
     private GameObject currentTarget;
-	
-	// Update is called once per frame
-	void Update () {
+
+    internal GameManager gm;
+
+    private void Start()
+    {
+        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+    }
+
+    // Update is called once per frame
+    void Update () {
         RaycastHit hit;
         if(Physics.Raycast(transform.position, transform.forward, out hit, selectionDistance, layerMask))
         {
