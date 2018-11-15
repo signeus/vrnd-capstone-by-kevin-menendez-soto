@@ -602,7 +602,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -735,11 +735,11 @@ GameObject:
   - component: {fileID: 607980439}
   m_Layer: 5
   m_Name: DebugFPS
-  m_TagString: Untagged
+  m_TagString: FPS
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &607980439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12911,6 +12911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf3243744c6a844890de4f35aba9052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugMode: 0
+  debugGM: {fileID: 607980438}
   timeLeftToStart: 18
   dissolveObjects:
   - {fileID: 1984627096}
@@ -12944,7 +12946,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1782579822
 GameObject:

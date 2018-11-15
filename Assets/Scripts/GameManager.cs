@@ -4,13 +4,18 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
+    // Debug Mode
+    [SerializeField]
+    bool debugMode = false;
+    [SerializeField]
+    GameObject debugGM;
+
     // Timer
     [SerializeField]
     float timeLeftToStart = 10.0f;
     float timeEnemy;
 
     bool enemyAppears = false;
-
 
     // Properties for Dissolve Mode
     [SerializeField]
@@ -36,6 +41,11 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        if (debugMode)
+        {
+            debugGM.SetActive(true);
+        }
+
         // Reinit the Material to -1.0f
         dissolveMaterial.SetFloat("Vector1_E9202937", -1.0f);
         objectDissolve = -1.0f;
