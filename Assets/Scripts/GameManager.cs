@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour {
     // Timer
     [SerializeField]
     float timeLeftToStart = 10.0f;
+    float timeEnemy;
+
+    bool enemyAppears = false;
 
 
     // Properties for Dissolve Mode
@@ -17,21 +20,37 @@ public class GameManager : MonoBehaviour {
     bool timeOut = false;
     float objectDissolve;
 
+    // Properties for the Light and Enemy
+    [SerializeField]
+    GameObject light;
+    [SerializeField]
+    GameObject enemy;
+
     // Use this for initialization
     void Start ()
     {
         // Reinit the Material to -1.0f
         dissolveMaterial.SetFloat("Vector1_E9202937", -1.0f);
         objectDissolve = -1.0f;
+
+        // Enemy has delay of 10 seconds
+        timeEnemy += 10.0f + timeLeftToStart;
     }
 	
 	// Update is called once per frame
 	void Update () {
         timeLeftToStart -= Time.deltaTime;
+        timeEnemy -= Time.deltaTime;
         if (timeLeftToStart < 0 && timeOut == false)
         {
             DissolveObjects();
             timeOut = true;
+        }
+        if(timeEnemy < 0)
+        {
+            enemyAppears = true;
+            TurnOnLight();
+            AppearEnemy();
         }
 
         if (timeOut)
@@ -49,6 +68,7 @@ public class GameManager : MonoBehaviour {
         foreach(GameObject go in dissolveObjects)
         {
             go.GetComponent<Renderer>().material = dissolveMaterial;
+            Destroy(go, 5f);
         }
     }
 
@@ -62,14 +82,24 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public void turnOnLight()
+    public void TurnOnLight()
     {
-
+        light.SetActive(true);
     }
 
-    public void turnOffLight()
+    public void TurnOffLight()
     {
-
+        light.SetActive(false);
     }
-    
+
+    public void AppearEnemy()
+    {
+        enemy.SetActive(true);
+    }
+
+    public void DissapearEnemy()
+    {
+        enemy.SetActive(false);
+    }
+
 }

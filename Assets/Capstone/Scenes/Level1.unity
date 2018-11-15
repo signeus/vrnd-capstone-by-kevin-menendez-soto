@@ -12887,7 +12887,7 @@ GameObject:
   - component: {fileID: 1751375932}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12898,12 +12898,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1751375931}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eaf3243744c6a844890de4f35aba9052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeftToStart: 2
+  timeLeftToStart: 18
   dissolveObjects:
   - {fileID: 1984627096}
   - {fileID: 1104432274}
@@ -12922,6 +12922,8 @@ MonoBehaviour:
   - {fileID: 496820965}
   - {fileID: 318835610}
   dissolveMaterial: {fileID: 2100000, guid: 23899421a95034e46837009de741e2a6, type: 2}
+  light: {fileID: 1419526366}
+  enemy: {fileID: 2120408467}
 --- !u!4 &1751375933
 Transform:
   m_ObjectHideFlags: 0
