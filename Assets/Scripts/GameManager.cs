@@ -73,8 +73,13 @@ public class GameManager : MonoBehaviour {
             gameOverImage.color = tempColor;
             if (timeChangeScreen <= 0)
             {
-                SceneManager.LoadScene("GameOver");
+                // SceneManager.LoadScene("GameOver"); For Next future
+                Application.Quit();
             }
+        }
+        if (Input.GetKey("escape") || OVRInput.GetDown(OVRInput.Button.Start))
+        {
+            Application.Quit();
         }
     }
 
