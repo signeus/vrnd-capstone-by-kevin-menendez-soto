@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour {
     bool timeOut = false;
     float objectDissolve;
 
+    DisolveEffectTrigger disolveEffect;
+
     // Properties for the Light and Enemy
     [SerializeField]
     GameObject light;
@@ -47,8 +49,9 @@ public class GameManager : MonoBehaviour {
         }
 
         // Reinit the Material to -1.0f
-        dissolveMaterial.SetFloat("Vector1_E9202937", -1.0f);
-        objectDissolve = -1.0f;
+        //dissolveMaterial.SetFloat("Vector1_E9202937", -1.0f);
+        //objectDissolve = -1.0f;
+        disolveEffect = GetComponent<DisolveEffectTrigger>();
 
         // Enemy has delay of 10 seconds
         timeEnemy += 10.0f + timeLeftToStart;
@@ -69,12 +72,7 @@ public class GameManager : MonoBehaviour {
             TurnOnLight();
             AppearEnemy();
         }
-
-        if (timeOut)
-        {
-            DissolveAction();
-        }
-
+        
         if (gameOver)
         {
             timeChangeScreen -= Time.deltaTime;
@@ -99,22 +97,15 @@ public class GameManager : MonoBehaviour {
         {
             return;
         }
-        foreach(GameObject go in dissolveObjects)
+        disolveEffect.TriggerEffect();
+        foreach (GameObject go in dissolveObjects)
         {
             go.GetComponent<Renderer>().material = dissolveMaterial;
-            Destroy(go, 5f);
+            Destroy(go, 12f);
         }
+        disolveEffect.TriggerEffect();
     }
-
-    void DissolveAction()
-    {
-        //objectDissolve += Time.deltaTime;
-        if (objectDissolve < 1)
-        {
-            objectDissolve += 0.5f * Time.deltaTime;
-            dissolveMaterial.SetFloat("Vector1_E9202937", objectDissolve);
-        }
-    }
+    
 
     public void TurnOnLight()
     {
