@@ -12,7 +12,12 @@ ModelImporter:
     3300000: Group38647
     4300000: Group38647
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Group38647Mat
+    second: {fileID: 2100000, guid: 5963e1936dcb51b4ca3468a66c05f29b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

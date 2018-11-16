@@ -578,7 +578,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.026
+      value: 1.209
       objectReference: {fileID: 0}
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalPosition.z
@@ -607,6 +607,57 @@ Prefab:
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -209.04799
+      objectReference: {fileID: 0}
+    - target: {fileID: 4834601183698870, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4281668773436500, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114171326156950618, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: maxRenderScale
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 143972011008584728, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114740208353788566, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: useProfileData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 143972011008584728, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: m_SkinWidth
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 143972011008584728, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: m_MinMoveDistance
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114740208353788566, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: HmdResetsY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114740208353788566, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: HmdRotatesY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023401911401966, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813282898347518, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.288
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
