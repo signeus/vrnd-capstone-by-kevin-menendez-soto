@@ -1544,6 +1544,10 @@ Prefab:
       propertyPath: m_TagString
       value: Grabbable
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a1153227d47fd35409b1af58e2b0cf1c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1153227d47fd35409b1af58e2b0cf1c, type: 3}
   m_IsPrefabParent: 0
@@ -2047,7 +2051,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2651,7 +2655,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 100
+    maxNumParticles: 25
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -7768,7 +7772,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 25
+    maxNumParticles: 15
     size3D: 0
     rotation3D: 0
     gravityModifier:
