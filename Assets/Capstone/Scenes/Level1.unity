@@ -590,7 +590,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.99673104
+      value: -0.7025971
       objectReference: {fileID: 0}
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalRotation.z
@@ -598,7 +598,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.08079149
+      value: 0.7115879
       objectReference: {fileID: 0}
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_RootOrder
@@ -606,7 +606,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4985943359006492, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -189.26799
+      value: -89.271
       objectReference: {fileID: 0}
     - target: {fileID: 4834601183698870, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalPosition.y
@@ -644,12 +644,12 @@ Prefab:
     - target: {fileID: 114740208353788566, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
         type: 2}
       propertyPath: HmdResetsY
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114740208353788566, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
         type: 2}
       propertyPath: HmdRotatesY
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4023401911401966, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalPosition.y
@@ -657,12 +657,37 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4813282898347518, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.288
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114740208353788566, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
         type: 2}
       propertyPath: EnableLinearMovement
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114740208353788566, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: SnapRotation
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114171326156950618, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: useRecommendedMSAALevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114171326156950618, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: resetTrackerOnLoad
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114171326156950618, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: AllowRecenter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 143972011008584728, guid: 73a41fd1dd9acdd4886f36ccebe0fd08,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73a41fd1dd9acdd4886f36ccebe0fd08, type: 2}
