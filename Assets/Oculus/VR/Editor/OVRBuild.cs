@@ -20,7 +20,9 @@ limitations under the License.
 ************************************************************************************/
 
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 /// <summary>
 /// Allows Oculus to build apps from the command line.

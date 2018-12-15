@@ -1,8 +1,10 @@
 namespace Oculus.Platform
 {
   using System;
-  using UnityEditor;
-  using UnityEngine;
+    #if UNITY_EDITOR
+        using UnityEditor;
+    #endif
+    using UnityEngine;
 
   // This classes implements a UI to edit the PlatformSettings class.
   // The UI is accessible from a the menu bar via: Oculus Platform -> Edit Settings

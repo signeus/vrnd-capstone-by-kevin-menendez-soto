@@ -20,8 +20,10 @@ limitations under the License.
 ************************************************************************************/
 
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.Callbacks;
+#endif
 using System;
 using System.Collections.Generic;
 using System.Linq;

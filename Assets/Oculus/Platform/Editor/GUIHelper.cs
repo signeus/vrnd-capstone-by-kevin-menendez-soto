@@ -1,7 +1,9 @@
 namespace Oculus.Platform
 {
-  using UnityEditor;
-  using UnityEngine;
+    #if UNITY_EDITOR
+        using UnityEditor;
+    #endif
+    using UnityEngine;
 
   class GUIHelper {
     public delegate void Worker();

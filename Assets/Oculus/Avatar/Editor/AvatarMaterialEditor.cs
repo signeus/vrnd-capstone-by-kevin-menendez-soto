@@ -1,5 +1,8 @@
 using UnityEngine;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using NUnit.Framework;
 using System.Linq;
 using System.Collections.Generic;

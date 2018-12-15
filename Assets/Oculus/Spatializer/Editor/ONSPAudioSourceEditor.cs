@@ -24,7 +24,9 @@ limitations under the License.
 ************************************************************************************/
 #define CUSTOM_LAYOUT
 
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using System.Collections.Generic;
 
